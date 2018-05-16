@@ -20,6 +20,6 @@ function prepareGallery()
                  return false;
                 }
  }
-
-
 }
+
+window.onload=prepareGallery();
