@@ -22,4 +22,4 @@ function prepareGallery()
  }
 }
 
-window.onload=prepareGallery();
+window.onload=prepareGallery;
