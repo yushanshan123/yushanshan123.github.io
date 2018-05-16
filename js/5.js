@@ -9,7 +9,7 @@ function prepareGallery()
 {
  if(!document.getElementsByTagName) return false;
  if(!document.getElementById) return false;
- if(!document.getElementsById("imagegallery")) return false;
+ if(!document.getElementById("imagegallery")) return false;
  var gallery=document.getElementById("imagegallery");
  var links=gallery.getElementsByTagName("a");
  for(var i=0;i<links.length;i++)
