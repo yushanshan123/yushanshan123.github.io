@@ -73,3 +73,17 @@ function addLoadEvent(func)
 }
 
 addLoadEvent(prepareGallery);
+function preparePlaceholder()
+{
+  var placeholder=document.createElement("img");
+  placeholder.setAttribute("id","placeholder");
+  placeholder.setAttribute("src","../img/position.jpg");
+  placeholder.setAttribute("alt","my image gallery");
+  document.body.appendChild(placeholder);
+  var description=document.createElement("p");
+  description.setAttribute("id","description");
+  var desctext=document.createTextNode("Choose an image.");
+  description.appendChild(desctext);
+  document.body.appendChild(description);
+}
+preparePlaceholder();
