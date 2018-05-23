@@ -72,7 +72,17 @@ function addLoadEvent(func)
 
 }
 
-addLoadEvent(prepareGallery);
+function insertAfter(newElement,targetElement)
+{
+ var parent=targetElement.parentNode();
+  if(parent.lastChild==targetElement){
+   parent.appendChild(newElement);
+  }
+  else{
+  parent.insertBefore(newElement,targetElement.nextSibling);}
+}
+
+
 function preparePlaceholder()
 {
   var placeholder=document.createElement("img");
@@ -85,5 +95,9 @@ function preparePlaceholder()
   var desctext=document.createTextNode("Choose an image.");
   description.appendChild(desctext);
   document.body.appendChild(description);
+  var gallery=document.getElementById("imagegallery");
+  insertAfter(placeholder,gallery);
+  insertAfter(description,placeholder);
 }
-preparePlaceholder();
+addLoadEvent(prepareGallery);
+addLoadEvent(preparePlaceholder);
