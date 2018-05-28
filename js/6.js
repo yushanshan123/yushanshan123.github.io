@@ -21,7 +21,6 @@ function prepareGallery()
                 }
  }
 }
-
 function addLoadEvent(func)
 {
   var oldnload=window.onload;
@@ -32,8 +31,8 @@ function addLoadEvent(func)
   else
   {
   window.onload=function(){
-   oldnload();
-   func();
+   oldnload;
+   func;
   }
   }
 }
