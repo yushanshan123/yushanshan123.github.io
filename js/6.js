@@ -24,15 +24,15 @@ function prepareGallery()
 function addLoadEvent(func)
 {
   var oldnload=window.onload;
-  if(typeof wiondow.onload!="function")
+  if(typeof window.onload!="function")
   {
     window.onload=func;
   }
   else
   {
   window.onload=function(){
-   oldnload;
-   func;
+   oldnload();
+   func();
   }
   }
 }
