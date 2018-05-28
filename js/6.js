@@ -31,7 +31,7 @@ function addLoadEvent(func)
   }
   else
   {
-  window.onload=fonction(){
+  window.onload=function(){
    oldnload();
    func();
   }
