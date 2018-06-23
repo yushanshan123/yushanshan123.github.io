@@ -42,7 +42,7 @@ function addLoadEvent(func)
 
 function insertAfter(newElement,targetElement)
 {
- var parent=targetElement.parentNode();
+ var parent=targetElement.parentNode;
   if(parent.lastChild==targetElement){
    parent.appendChild(newElement);
   }
