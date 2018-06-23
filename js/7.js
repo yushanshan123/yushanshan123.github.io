@@ -26,7 +26,7 @@ for(var i=0;i<links.length;i++)
 function addLoadEvent(func)
 {
   var oldnload=window.onload;
-  if(typeof wiondow.onload!='function')
+  if(typeof window.onload!='function')
   {
     window.onload=func;
   }
