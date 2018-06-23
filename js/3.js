@@ -5,9 +5,12 @@ window.onload=function(){
   if(!document.getElementsByTagName) return false;
   var lnks=document.getElementsByTagName("a");
   for(var i=0;i<lnks.length;i++){
-      lnks[i].onlick=function(){
+    if(links[i].getAttribute("class")=="popup")
+    {    
+       lnks[i].onlick=function(){
         popUp(this.getAttribute("href"));
         return false;
         }
       }
     }
+}
